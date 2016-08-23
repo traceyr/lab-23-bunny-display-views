@@ -28,6 +28,11 @@ app.config(['$routeProvider', function($route) {
       controller: 'FullsizeController',
       controllerAs: 'fu'
     })
+    .when('/thumbnail', {
+      templateUrl: '/app/view/thumbnail/thumbnail.html',
+      controller: 'ThumbnailController',
+      controllerAs: 'th'
+    })
     .otherwise({
       redirectTo: '/'
     });
@@ -36,3 +41,4 @@ app.config(['$routeProvider', function($route) {
 // angular components
 require('./view/home');
 require('./view/fullsize');
+require('./view/thumbnail');
