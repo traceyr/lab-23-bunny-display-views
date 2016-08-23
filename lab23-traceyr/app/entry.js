@@ -23,6 +23,11 @@ app.config(['$routeProvider', function($route) {
       controller: 'HomeController',
       controllerAs: 'hc'
     })
+    .when('/fullsize/:id', {
+      templateUrl: '/app/view/fullsize/fullsize.html',
+      controller: 'FullsizeController',
+      controllerAs: 'fs'
+    })
     .otherwise({
       redirectTo: '/'
     });
