@@ -26,7 +26,7 @@ app.config(['$routeProvider', function($route) {
     .when('/fullsize/:id', {
       templateUrl: '/app/view/fullsize/fullsize.html',
       controller: 'FullsizeController',
-      controllerAs: 'fs'
+      controllerAs: 'fu'
     })
     .otherwise({
       redirectTo: '/'
@@ -35,3 +35,4 @@ app.config(['$routeProvider', function($route) {
 
 // angular components
 require('./view/home');
+require('./view/fullsize');

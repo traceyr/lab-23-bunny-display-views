@@ -7,9 +7,12 @@ lab23.controller('FullsizeController', ['$routeParams', '$rootScope', '$location
   this.images = $rootScope.imageData;
 
   this.isValidId = function(id){
-    if(isNaN(id)) return false;
-    if(isFinite(id)) return false;
-    if(id < 1) return false;
+    if(isNaN(id))
+      return false;
+    if(!isFinite(id))
+      return false;
+    if(id < 1)
+      return false;
     if (typeof(this.images[id-1]) === 'undefined') return false;
     return true;
   };
