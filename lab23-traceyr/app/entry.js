@@ -9,7 +9,12 @@ const angular = require('angular');
 const angular_route = require('angular-route');
 
 // angular modules
-var app = angular.module('demoApp', [angular_route]);
+var app = angular.module('lab23', [angular_route]);
+
+app.run(['$rootScope', function($rootScope){
+  $rootScope.imageData = require('./data/images.js');
+  $rootScope.errorMessage = 'Error trying to access unknown page';
+}]);
 
 app.config(['$routeProvider', function($route) {
   $route

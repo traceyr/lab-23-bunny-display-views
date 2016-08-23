@@ -8,7 +8,8 @@ module.exports = [
   },
   {
     id: 2,
-    url: 'https://www.flickr.com/photos/eschweik/27945680922/in/pool-welshcorgis/'
+    url: 'https://www.flickr.com/photos/eschweik/27945680922/in/pool-welshcorgis/',
+    description: 'Cute Corgi 2'
   },
   {
     id: 3,
