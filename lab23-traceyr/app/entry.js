@@ -33,8 +33,13 @@ app.config(['$routeProvider', function($route) {
       controller: 'ThumbnailController',
       controllerAs: 'th'
     })
+    .when('/error', {
+      templateUrl: '/app/view/error/error.html',
+      controller: 'ErrorController',
+      controllerAs: 'er'
+    })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/error'
     });
 }]);
 
@@ -42,3 +47,4 @@ app.config(['$routeProvider', function($route) {
 require('./view/home');
 require('./view/fullsize');
 require('./view/thumbnail');
+require('./view/error');
